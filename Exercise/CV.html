@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Harvard Resume Template</title>
+    <style>
+        /* จัดขนาดหน้าให้เหมาะสำหรับพิมพ์ (A4) */
+        @page {
+            size: A4;
+            margin: 40mm 30mm;
+            background-color: #ffffff;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Times New Roman', Times, serif, 'Sarabun';
+            font-size: 11pt;
+            line-height: 1.4;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        /* ส่วนหัวประวัติ */
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .name {
+            font-size: 20pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0;
+        }
+        .contact-line {
+            border-top: 1px solid #000000;
+            margin-top: 5px;
+            padding-top: 5px;
+            font-size: 10pt;
+            word-spacing: 1px;
+        }
+        /* โครงสร้างแต่ละ Section */
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 12pt;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000000;
+            margin: 0 0 10px 0;
+            padding-bottom: 2px;
+            letter-spacing: 0.5px;
+            page-break-after: avoid;
+        }
+        /* โครงสร้างรายการ */
+        .item {
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+        }
+        .item-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 3px;
+        }
+        .item-table td {
+            padding: 0;
+            vertical-align: top;
+        }
+        .left-col {
+            text-align: left;
+            font-weight: bold;
+            width: 70%;
+        }
+        .right-col {
+            text-align: right;
+            font-weight: bold;
+            width: 30%;
+        }
+        .sub-left {
+            text-align: left;
+            font-style: italic;
+        }
+        .sub-right {
+            text-align: right;
+            font-style: italic;
+        }
+        .details-list {
+            margin: 3px 0 0 0;
+            padding-left: 20px;
+        }
+        .details-list li {
+            margin-bottom: 3px;
+            text-align: justify;
+        }
+        /* ส่วนทักษะและความสนใจ */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .skills-table td {
+            padding: 2px 0;
+            vertical-align: top;
+        }
+        .skills-label {
+            font-weight: bold;
+            width: 15%;
+            white-space: nowrap;
+        }
+        .skills-value {
+            width: 85%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="name">Saharad Chimdonthong</h1>
+        <div class="contact-line">
+            Sathorn &bull; bangkok, State Zip &bull; saharad.ch &bull; phone number
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="item">
+            <table class="item-table">
+                <tr>
+                    <td class="left-col">King Mongkut's Institute of Technology Ladkrabang</td>
+                    <td class="right-col">Ladkrabang, Bangkok</td>
+                </tr>
+                <tr>
+                    <td class="sub-left">Bachelor's Degree, Enigineering. GPA : </td>
+                    <td class="sub-right">2024</td>
+                </tr>
+            </table>
+            <ul class="details-list">
+                <li>Thesis [Note: Optional]</li>
+                <li>Relevant Coursework: [Note: Optional. Awards and honors can also be listed here.]</li>
+            </ul>
+        </div>
+
+        <div class="item">
+            <table class="item-table">
+                <tr>
+                    <td class="left-col">High School Name: Wat Suthiwararam school</td>
+                    <td class="right-col">Bangkok</td>
+                </tr>
+                <tr>
+                    <td class="sub-left">Science-Math major GPA : 3.98</td>
+                    <td class="sub-right">Graduation Date</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="item">
+            <table class="item-table">
+                <tr>
+                    <td class="left-col">Organization</td>
+                    <td class="right-col">chachoengsao</td>
+                </tr>
+                <tr>
+                    <td class="sub-left">Section Head</td>
+                    <td class="sub-right">Duration:1year</td>
+                </tr>
+            </table>
+            <ul class="details-list">
+                <li>Check daily work on the production line.</li>
+                <li>Inspect the cause and solve problems in the production line. along with making a summary report of the problem</li>
+                <li>Develop a work adjustment machine to increase production capacity and efficiency</li>
+            </ul>
+        </div>
+
+                <div class="item">
+            <table class="item-table">
+                <tr>
+                    <td class="left-col">Organization</td>
+                    <td class="right-col">Prathumthanee</td>
+                </tr>
+                <tr>
+                    <td class="sub-left">Inernship</td>
+                    <td class="sub-right">Duration:2month</td>
+                </tr>
+            </table>
+            <ul class="details-list">
+                <li>Assist in small task such as wiring,equipment installation</li>
+                <li>Design the duck temperature controller MDB for duck room, CPF (Thailand) Public Company Limited</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Leadership & Activities</h2>
+
+        <div class="item">
+            <table class="item-table">
+                <tr>
+                    <td class="left-col">Organization</td>
+                    <td class="right-col">City, State</td>
+                </tr>
+                <tr>
+                    <td class="sub-left">Volunteer</td>
+                    <td class="sub-right">Month Year &ndash; Month Year</td>
+                </tr>
+            </table>
+            <ul class="details-list">
+                <li>This section can be formatted similarly to the Experience section, or you can omit descriptions for activities.</li>
+                <li>If this section is more relevant to the opportunity you are applying for, consider moving this above your Experience section.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Skills & Interests [Note: Optional]</h2>
+        <table class="skills-table">
+            <tr>
+                <td class="skills-label">Technical:</td>
+                <td class="skills-value">Javascript, HTML, MongoDB, Css, SQL</td>
+            </tr>
+            <tr>
+                <td class="skills-label">Language:</td>
+                <td class="skills-value">Beginer English, Advanced Thai</td>
+            </tr>
+            <tr>
+                <td class="skills-label">Laboratory:</td>
+                <td class="skills-value">List scientific / research lab techniques or tools [If Applicable]</td>
+            </tr>
+            <tr>
+                <td class="skills-label">Interests:</td>
+                <td class="skills-value">Game, Technology, News</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
